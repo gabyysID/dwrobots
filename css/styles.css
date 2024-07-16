@@ -7,7 +7,6 @@ body {
     margin: 0;
     color: white;
     font-weight: lighter;
-    background-color: #3E3E3F;
 }
 .container {
     margin-top: 0;
@@ -26,10 +25,11 @@ body {
 #titleP {
     margin-top: 10px;
     line-height: 19.5pt;
+    font-size: 25px;
 }
 #main,
 #concept {
-    font-size: 16px;
+    font-size: 20px;;
 }
 #info {
     margin-top: 25px;
@@ -40,10 +40,11 @@ body {
     letter-spacing: 13.1pt;
 }
 #datawake {
-    width: 25%;
+    margin-top: 20px;
+    width: 50%;
 }
 .slider {
-    margin-top: 7%;
+    margin-top: 35%;
     width: 80%;
     max-width: 600px;
     overflow: hidden;
@@ -59,7 +60,7 @@ body {
     box-sizing: border-box;
 }
 .slide img {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: auto;
 }
