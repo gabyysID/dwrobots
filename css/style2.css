@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: lighter;
+    margin: 0;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main {
+    text-align: center;
+}
+
+#datawake {
+    width: 50%;
+}
+body, html {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 50%;
+    text-align: center;
+}
+.main img {
+    width: 40%;
+    transition: opacity 2s ease-in-out;
+}
+#colmeia, #cubo, #human {
+    margin-top: 22%;
+    position: absolute;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#colmeia {
+    opacity: 1;
+    animation: fadeIn 3s forwards;
+}
+#cubo {
+    animation: fadeIn 3s forwards 3s;
+}
+#human {
+    animation: fadeIn 3s forwards 2s;
+}
