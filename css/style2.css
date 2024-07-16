@@ -16,7 +16,8 @@ body {
 }
 
 #datawake {
-    width: 50%;
+    margin-top: 20px;
+    width: 100%;
 }
 body, html {
     margin: 0;
@@ -29,14 +30,21 @@ body, html {
     text-align: center;
 }
 .main img {
-    width: 40%;
+    width: 70%;
     transition: opacity 2s ease-in-out;
 }
-#colmeia, #cubo, #human {
-    margin-top: 22%;
+#colmeia, #cubo {
+    margin-top: 95%;
     position: absolute;
     
     left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#human{
+    margin-top: 75%;
+    position: absolute;
+    left: 15%;
     transform: translate(-50%, -50%);
     opacity: 0;
 }
@@ -45,8 +53,9 @@ body, html {
     animation: fadeIn 3s forwards;
 }
 #cubo {
-    animation: fadeIn 3s forwards 3s;
-}
-#human {
     animation: fadeIn 3s forwards 2s;
 }
+#human {
+    animation: fadeIn 3s forwards 6s;
+}
+
