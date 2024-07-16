@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datawake</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="icon" href="../img/dw.png">
+    <style>
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        #colmeia {
+            animation-delay: 0s;
+        }
+
+        #cubo {
+            animation-delay: 3s;
+        }
+
+        #human {
+            animation-delay: 6s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgtitle">
+            <img id="datawake" src="../img/datawake.png" alt="Logo Datawake" width="70%"> 
+        </div>
+        <div class="main">
+            <div id="titleP">
+                <img id="colmeia" class="fade-in" src="../img/colmeiraRobots.png" width="30%" alt="colmeia de robos">
+                <img id="cubo" class="fade-in" src="../img/cubo.png" alt="formas hexagonais em cor amarela">
+                <img id="human" class="fade-in" src="../img/human.png" alt="homem colmeia">
+            </div>
+        </div>
+    </div>
+    <script src="../js/script2.js"></script>
+</body>
+</html>
+
