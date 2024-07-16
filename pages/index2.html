@@ -27,12 +27,22 @@
 
         #human {
             animation-delay: 6s;
+            position: absolute;
+            top: 0;
+            right: 60%;
+            transform: translate(-50%, -50%);
         }
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
+        @keyframes zoomIn {
+            from {
+                transform: scale(25);
             }
+            to {
+                transform: scale(1);
+            }
+        }
+        #human.zoom-effect {
+            animation: zoomIn 3s forwards;
         }
     </style>
 </head>
@@ -49,7 +59,16 @@
             </div>
         </div>
     </div>
+    <script>
+        setTimeout(() => {
+            document.getElementById('colmeia').classList.add('hide');
+            document.getElementById('cubo').classList.add('hide');
+        }, 6000); // 
+
+        setTimeout(() => {
+            document.getElementById('human').classList.add('zoom-effect');
+        }, 6000); //
+    </script>
     <script src="../js/script2.js"></script>
 </body>
 </html>
-
